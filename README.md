@@ -22,6 +22,11 @@ npm run dev
 
 Akses frontend pada URL localhost:3000.
 
+Docker diperlukan untuk bisa menjalankan backend. Install Docker engine pada Linux, dan untuk bisa menjalankan demo backend, pull image ubuntu dengan menggunakan command:
+```bash
+docker pull ubuntu
+```
+
 ## Instance
 
 Ketika mengakses localhost:3000, server frontend akan mengambil ID instance random dari backend melalui endpoint localhost:3000/api/vm. ID instance akan disimpan pada cookie browser. Untuk mengakses instance VM yang sebelumnya telah didapatkan, simpan ID pada cookie dan kirim ID dalam cookie untuk mendapatkan instance yang sama.
